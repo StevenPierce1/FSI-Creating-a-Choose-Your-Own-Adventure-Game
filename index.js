@@ -16,25 +16,22 @@ if(firstAnswer === 'left') {
             let thirdAnswer = window.prompt(`After ascending the staircase, you discover a shiny blue stone, which you take home and cherish forever.`)
         }
     }
-
 } else if(firstAnswer === 'right') {
-    let secondAnswer = window.prompt(`You come across a snoring dragon. On the other side of him, you see a shiny chest of treasure. Another path would lead you away from the dragon altogether. Which path do you take? Run or Stay?`)
-    if(secondAnswer === 'Past the dragon') {
+    let secondAnswer = window.prompt(`You come across a snoring dragon. On the other side of him, you see a shiny chest of treasure. Another path would lead you away from the dragon altogether. Which path do you take? past or away`)
+    if (secondAnswer === `past`){
         let thirdAnswer = window.prompt(`The dragon wakes up and sits upright. You only have a moment to respond, to stay or run:`)
-        if(thirdAnswer === 'Stay') {
-            let thirdAnswer = window.prompt('You and the dragon have a uplifting conversation about local politics and become life long friends')
-        } else if (thirdAnswer === 'Run'){
-            let thirdAnswer = window.prompt('Quickly, you run back to the caves entrance. Sheepish, you return home.')
+        if (thirdAnswer === `stay`) {
+            let thirdAnswer = window.prompt(`You and the dragon have an uplifting conversation about local politics and become lifelong friends.`)
         }
-    } 
-
-}
-else if(secondAnswer ==='Away from the dragon'){
-    let secondAnswer = window.prompt('After walking a while longer, you come across a shiny blue flower. It is so beautiful that you decide you must either draw it or pick it. Which do you do?')
-    if(secondAnswer === 'Draw it.'){
-        let thirdAnswer = window.prompt('You draw the flower, capturing only a fraction of its beauty with your quill. You bring the drawing home, somewhat disappointed, but over time, discover joy in sharing it with your friends and family, recounting the story of your days as a sorcerer with the aid of the sketch.')
-        if(thirdAnswer === 'Pick it.'){
-            let thirdAnswer = window.prompt ('You pick the flower and bring it home, and all marvel at its brilliance. However, over time it fades and eventually crumbles to dust.')
+        else if(thirdAnswer === `run`){
+            let thirdAnswer = window.prompt(`Quickly, you run back to the cave's entrance. Sheepish, you return home.`)
+        }
+    } else if(secondAnswer === `away`){
+        let thirdAnswer = window.prompt(`After walking a while longer, you come across a shiny blue flower. It is so beautiful that you decide you must either draw it or pick it. Which do you do?`)
+        if (thirdAnswer === `draw`){
+            let thirdAnswer = window.prompt(`You draw the flower, capturing only a fraction of its beauty with your quill. You bring the drawing home, somewhat disappointed, but over time, discover joy in sharing it with your friends and family, recounting the story of your days as a sorcerer with the aid of the sketch.`) 
+        }else if(thirdAnswer === `pick it`){
+            let thirdAnswer= window.prompt(`You pick the flower and bring it home, and all marvel at its brilliance. However, over time it fades and eventually crumbles to dust.`)
         }
     }
 }
